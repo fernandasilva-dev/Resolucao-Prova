@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de alunos</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="col-1">NOME</th>
+            <th class="col-5">TELEFONE</th>
+            <th class="col-2">EMAIL</th>
+            <th class="col-2">NOTA</th>
+            <th class="col-2">SITUAÇÃO</th>
+
+        </tr>   
+        {{#each alunos}}
+            <tr>
+                <td>{{nome}}</td>
+                <td>{{telefone}}</td>
+                <td>{{email}}</td>
+                <td>{{nota}}</td>
+                <td>{{situacao}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
+
